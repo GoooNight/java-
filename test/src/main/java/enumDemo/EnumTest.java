@@ -1,7 +1,7 @@
 package enumDemo;
 
 /**
- * @Description
+ * @Description 枚举测试类
  * @author:awei
  * @date:2019/8/8
  * @ver:1.0

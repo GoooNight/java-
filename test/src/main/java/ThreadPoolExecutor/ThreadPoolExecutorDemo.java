@@ -21,7 +21,11 @@ public class ThreadPoolExecutorDemo {
         ExecutorCompletionService<String> service = new ExecutorCompletionService<>(executor);
         List<Future<String>> list = new ArrayList<>(10);
         for (int i = 0;i < 5;i++){
-            Future<String> submit = service.submit(() -> "你好啊");
+            Future<String> submit = service.submit(() -> {
+                Thread.sleep(5000);
+                System.out.println("www");
+                return "你好啊";});
+
             try {
                 list.add(submit);
             } catch (Exception e) {
