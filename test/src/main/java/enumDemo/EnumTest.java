@@ -9,7 +9,7 @@ package enumDemo;
 public class EnumTest {
     public static void main(String[] args) {
         EnumDemo blue = EnumDemo.BLUE;
-        System.out.println(blue);
+        System.out.println(blue.getName());
     }
 
 }

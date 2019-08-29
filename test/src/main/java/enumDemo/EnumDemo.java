@@ -20,7 +20,12 @@ public enum  EnumDemo  {
      */
     BLUE("蓝色");
     private String name;
-    private EnumDemo(String name){
+
+    EnumDemo(String name){
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 }
